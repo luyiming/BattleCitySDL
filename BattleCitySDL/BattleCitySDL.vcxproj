@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2_mixer-2.0.1\include;C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2_image-2.0.1\include;C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2_mixer-2.0.1\lib\x86;C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2_image-2.0.1\lib\x86;C:\Users\luyim\Desktop\BattleCitySDL\BattleCitySDL\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\SDL2_mixer-2.0.1\include;.\SDL2_image-2.0.1\include;.\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\SDL2_mixer-2.0.1\lib\x86;.\SDL2_image-2.0.1\lib\x86;.\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -91,6 +91,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +145,7 @@
   <ItemGroup>
     <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Bullets.cpp" />
-    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="MapEditor.cpp" />
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Enemies.cpp" />
     <ClCompile Include="Enemy.cpp" />
@@ -163,7 +164,7 @@
   <ItemGroup>
     <ClInclude Include="Audio.h" />
     <ClInclude Include="Bullets.h" />
-    <ClInclude Include="Editor.h" />
+    <ClInclude Include="MapEditor.h" />
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Enemies.h" />
     <ClInclude Include="Enemy.h" />

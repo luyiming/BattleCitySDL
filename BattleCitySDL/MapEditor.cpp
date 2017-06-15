@@ -1,4 +1,4 @@
-#include "Editor.h"
+#include "MapEditor.h"
 #include "Game.h"
 #include <iostream>
 

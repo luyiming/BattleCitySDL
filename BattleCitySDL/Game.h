@@ -8,7 +8,7 @@
 #include "Player.h"
 #include "Renderer.h"
 #include "Bullets.h"
-#include "Editor.h"
+#include "MapEditor.h"
 #include "Enemy.h"
 #include "Enemies.h"
 #include "Menu.h"
