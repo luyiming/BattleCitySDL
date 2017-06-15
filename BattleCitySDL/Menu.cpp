@@ -50,7 +50,7 @@ void Menu::ChooseItem() {
         break;
     case 3:
         Game::instance().SetGameState(GS_EDITOR);
-        Game::instance().GetLevel()->LoadMap("data/levels/temp.lvl");
+        Game::instance().GetLevel()->LoadMap("data/map/temp");
         break;
     }
 }

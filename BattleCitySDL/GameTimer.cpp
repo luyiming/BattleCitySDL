@@ -82,10 +82,10 @@ void GameTimer::ChooseLevel() {
     if (selectedLevel > Game::instance().GetLevel()->NumOfMaps())
         selectedLevel = 1;
 
-    string level = "data/levels/" + to_string(selectedLevel) + ".lvl";
+    string level = "data/map/" + to_string(selectedLevel);
 
     if (selectedLevel == 0) {
-        level = "data/levels/temp.lvl";
+        level = "data/map/temp";
     }
 
     if (Game::instance().GetLevel()->LoadMap(level) == false) {
@@ -100,10 +100,8 @@ void GameTimer::ChooseLevel() {
     Game::instance().GetEnemies()->DestroyAllEnemies();
     Game::instance().GetEnemies()->UnPause();
 
-    Game::instance().GetPlayer()->SetInvincibility(5);
     Game::instance().GetPlayer()->Born();
     if (Game::instance().GetPlayerTwo() != NULL) {
-        Game::instance().GetPlayerTwo()->SetInvincibility(5);
         Game::instance().GetPlayerTwo()->Born();
     }
 

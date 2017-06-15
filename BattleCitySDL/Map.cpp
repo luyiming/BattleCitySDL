@@ -204,9 +204,9 @@ void Map::DumpMap() {
 }
 
 void Map::SaveMap() {
-    ofstream fout("data/levels/temp.lvl");
+    ofstream fout("data/map/temp");
     if (!fout) {
-        cout << "- Save level fail (Unable to open data/levels/temp.lvl)" << endl;
+        cout << "- Save map fail (Unable to open data/map/temp)" << endl;
         fout.close();
         return;
     }
@@ -219,7 +219,7 @@ void Map::SaveMap() {
     }
 
     fout.close();
-    cout << "Save to data/levels/temp.lvl" << endl;
+    cout << "Save to data/map/temp" << endl;
 }
 
 void Map::DestroyTile(int x1, int y1, int x2, int y2, int bulletPower, Direction dir) {
