@@ -1,6 +1,6 @@
 #include <SDL.h>
 #include <SDL_opengl.h>
-#include <GL\GLU.h>
+#include <GL/glu.h>
 #include <iostream>
 #include "Game.h"
 #include "Renderer.h"
