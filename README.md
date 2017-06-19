@@ -7,6 +7,11 @@
 
 Remake of Battle City (a.k.a. Tank1990). Written in C++11 and OpenGL using SDL2.0.
 
+# Screenshots
+![](https://github.com/luyiming/BattleCitySDL/blob/master/screenshots/screenshots_1.png)
+![](https://github.com/luyiming/BattleCitySDL/blob/master/screenshots/screenshots_2.png)
+![](https://github.com/luyiming/BattleCitySDL/blob/master/screenshots/screenshots_3.png)
+
 # Building Source
 
 ## Prerequisites
