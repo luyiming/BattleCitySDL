@@ -23,18 +23,30 @@ The following libraries are required to build:
 
 Please make sure that all dependancies are installed and linked properly to your PATH before building.
 
+### Windows
+Libraries files are already put in the `lib/` folder. You can replace them with the newest library files from SDL2.0 if you like.
+
 ### Debian/Ubuntu
 Simply run the following commands:
 ```
-sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-dev libsdl2_image-dev libsdl2_mixer-dev
+sudo apt-get install mesa_dev
 ```
-
-### Windows
 
 ## Build Instructions
-```
+
+### Linux
+```bash
 mkdir build
 cd build
-cmake .. -G "Unix Makefile"
-make
+cmake .. # You can switch to other build systems, see cmake manual
+make     # the default build system on Linux is "Unix Makefiles"
+./BattleCitySDL # run the game
 ```
+### Windows
+```bash
+mkdir build
+cd build
+cmake .. # the default build system on Windows is Visual Studio
+```
+Open `BattleCitySDL.sln` file in `build/` folder. You can then build and run the project in Visual Studio. The executable file should be in build/Debug.
