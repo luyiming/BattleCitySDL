@@ -1,14 +1,11 @@
 # BattleCitySDL
 
 * License: [MIT](https://mit-license.org/)
-* Windows Version Release
-* Linux
+* Platform: Windows/Linux/MacOS
 
 # Project Info
 
 Remake of Battle City (a.k.a. Tank1990). Written in C++11 and OpenGL using SDL2.0.
-
-# Screenshots
 
 # Building Source
 
@@ -16,21 +13,20 @@ Remake of Battle City (a.k.a. Tank1990). Written in C++11 and OpenGL using SDL2.
 
 The following libraries are required to build:
 
-- SDL2.0
-- SDL_image
-- SDL_mixer
-- OpenGL
+- [SDL2.0](https://www.libsdl.org/download-2.0.php)
+- [SDL_image](https://www.libsdl.org/projects/SDL_image/)
+- [SDL_mixer](https://www.libsdl.org/projects/SDL_mixer/)
+- [OpenGL](https://www.opengl.org/)
 
 Please make sure that all dependancies are installed and linked properly to your PATH before building.
 
 ### Windows
-Libraries files are already put in the `lib/` folder. You can replace them with the newest library files from SDL2.0 if you like.
+SDL2.0-related libraries have already been prepared in the `lib/` folder. If you like, you can replace them with the newest files from [SDL2.0](https://www.libsdl.org/download-2.0.php).
 
-### Debian/Ubuntu
-Simply run the following commands:
+### Linux
+Follow the instructions above. If you use Debian/Ubuntu, simply cut'n and paste:
 ```
 sudo apt-get install libsdl2-dev libsdl2_image-dev libsdl2_mixer-dev
-sudo apt-get install mesa_dev
 ```
 
 ## Build Instructions
@@ -49,4 +45,4 @@ mkdir build
 cd build
 cmake .. # the default build system on Windows is Visual Studio
 ```
-Open `BattleCitySDL.sln` file in `build/` folder. You can then build and run the project in Visual Studio. The executable file should be in build/Debug.
+Open `BattleCitySDL.sln` file in `build/` folder. You can then build and run the project in Visual Studio. The executable file should be in `build/Debug`.
