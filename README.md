@@ -24,7 +24,7 @@ Please make sure that all dependancies are installed and linked properly to your
 SDL2.0-related libraries have already been prepared in the `lib/` folder. If you like, you can replace them with the newest files from [SDL2.0](https://www.libsdl.org/download-2.0.php).
 
 ### Linux
-Follow the instructions above. If you use Debian/Ubuntu, simply cut'n and paste:
+If you use Debian/Ubuntu, simply cut'n paste:
 ```
 sudo apt-get install libsdl2-dev libsdl2_image-dev libsdl2_mixer-dev
 ```
